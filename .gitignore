@@ -1,1 +1,35 @@
-/.idea
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+
+# Distribution / packaging
+.build/
+dist/
+*.egg-info
+
+# Unit test / coverage reports
+coverage.xml
+*.cover
+
+# Pytest
+.cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+*.vscode
+
+# Docker specific
+*.log
+docker-compose.yml
