@@ -16,8 +16,8 @@
 
 1. Клонируйте репозиторий:
     ```sh
-    git clone https://github.com/yourusername/eth_project.git
-    cd eth_project
+    git clone https://github.com/Traismer/eth_two_project.git
+    cd eth_two_project
     ```
 
 2. Установите зависимости:
