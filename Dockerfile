@@ -1,6 +1,13 @@
 # Базовый образ Python
 FROM python:3.12-slim
 
+# Установим системные зависимости
+RUN apt-get update && apt-get install -y \
+    gcc \
+    build-essential \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 # Установим Poetry
 RUN pip install poetry
 
