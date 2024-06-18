@@ -79,6 +79,12 @@
       │   ├── connection.py
       │   ├── exceptions.py
       │   ├── account.py
+      │   ├── blocks.py
+      │   ├── transaction.py
+      │
+      ├── menu/
+      │   ├── __init__.py
+      │   ├── tab_menu.py
       │
       ├── main.py
       ├── pyproject.toml
@@ -89,7 +95,10 @@
 - **eth_project/connection.py**: подключение к тестовому стенду Ethereum.
 - **eth_project/exceptions.py**: декоратор для обработки исключений.
 - **eth_project/account.py**: функции для работы с аккаунтами и их балансом.
-- **main.py**: основной скрипт для запуска программы.
+- **eth_project/blocks.py**: функции для работы с блоками.
+- **eth_project/transaction.py**: функции для работы с транзакциями.
+- **menu/tab_menu.py**: функции доступные из главного меню выбора.
+- **main.py**: основной скрипт для запуска программы и меню выбора действий.
 - **pyproject.toml**: файл для управления зависимостями с помощью Poetry.
 - **README.md**: документация проекта.
 - **Dockerfile**: файл для сборки Docker-образа.

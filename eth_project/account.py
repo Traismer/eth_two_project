@@ -1,5 +1,5 @@
-from .connection import w3
-from .exceptions import handle_exceptions
+from eth_project.connection import w3
+from eth_project.exceptions import handle_exceptions
 
 
 @handle_exceptions
@@ -51,5 +51,15 @@ def validate_eth_value(value):
     return True
 
 
+@handle_exceptions
+def create_account():
+    """
+    Создает новый аккаунт в тестовом стенде.
+    :return: Адрес созданного аккаунта и закрытый ключ
+    """
+    account = w3.eth.account.create()
+    return account.address, account.key
+
+
 # Экспортировать функции
-__all__ = ['get_account', 'get_balance_eth', 'validate_index', 'validate_eth_value']
+__all__ = ['get_account', 'get_balance_eth', 'validate_index', 'validate_eth_value', 'create_account']
